@@ -6,6 +6,20 @@ vdobutton.addEventListener("click", ()=>{
 
 function clickChangeColor() {
   const title = document.getElementById("title");
-  title.innerHTML = "My Earnnie 💖💖💖";
-  title.style.color = "pink";
+  if (title.classList.contains("mybabecolor")) {
+    title.classList.remove("mybabecolor");
+    title.innerHTML = "My Love 💖 is ?";
+  }else {
+    title.classList.add("mybabecolor");
+    title.innerHTML = "My Earnnie 💖💖💖";
+  }
+}
+
+function clicktoggle() {
+  const toggle = document.getElementById("toggle");
+  if (toggle.classList.contains("hidden")) {
+    toggle.classList.remove("hidden");
+  }else {
+    toggle.classList.add("hidden");
+  }
 }
