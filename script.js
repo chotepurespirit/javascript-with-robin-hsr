@@ -23,3 +23,12 @@ function clicktoggle() {
     toggle.classList.add("hidden");
   }
 }
+
+function clickExclusiveImage() {
+  const Robin = document.getElementById("robineximg");
+  Robin.src = "robin-4.webp";
+  Robin.alt = "Robin Exclusive Image";
+  Robin.style = "width: 300px; height: 425px;";
+}
+
+const Robin = document.getElementById("robineximg");
